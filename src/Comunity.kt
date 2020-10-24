@@ -11,8 +11,8 @@ class Comunity(vararg comunityMember: Comunity_Member) {
 
         return total
     }
-    fun donation_availbility (comunityMember: Comunity_Member) : Double
-            = when(comunityMember.Salary){
+    fun donation_availbility (comunityMember: Comunity_Member) =
+        when(comunityMember.Salary){
             in 0..7000 -> 4000.0
             in 7001..12000-> 1500.0
             in 12001..15000->750.0
