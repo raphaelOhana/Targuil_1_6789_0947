@@ -1,6 +1,8 @@
 import java.util.*
 
 abstract class Comunity_Member (ID:String , gender:Gender,  name: String,  adresse:String,  birthday: Date,  torah_hours: Int,  work_hour : Int, Salary:Int) : Obligation{
+    abstract fun print_details()
+
     var ID : String = ID
         get() =  field
         private set(value) {field = value}
